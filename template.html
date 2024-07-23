@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика по параллелепипедам</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f0f0; /* Цвет фона страницы */
+            background-image: url('picture.jpg'); /* Замените на путь к вашему фоновому изображению */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Прозрачный фон контейнера */
+            padding: 20px;
+            border-radius: 10px; /* Закругление углов контейнера */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .statistics {
+            margin-top: 20px;
+        }
+        .stat-item {
+            margin-bottom: 10px;
+        }
+        .parallelepiped {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            background-color: #3498db; /* Цвет параллелепипеда */
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateY(45deg); /* Поворот параллелепипеда */
+            top: 50%;
+            left: 50%;
+            margin-top: -100px; /* Половина высоты параллелепипеда */
+            margin-left: -150px; /* Половина ширины параллелепипеда */
+            z-index: -1; /* Чтобы фоновый параллелепипед был под контентом */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень параллелепипеда */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Статистика по параллелепипедам</h1>
+        <div class="statistics">
+            <div class="stat-item"><strong>Среднее значение диагонали:</strong> <span id="avg_diag"></span></div>
+            <div class="stat-item"><strong>Средний объем:</strong> <span id="avg_volume"></span></div>
+            <div class="stat-item"><strong>Средняя площадь поверхности:</strong> <span id="avg_surface_area"></span></div>
+            <div class="stat-item"><strong>Средний угол alpha:</strong> <span id="avg_alpha"></span></div>
+            <div class="stat-item"><strong>Средний угол beta:</strong> <span id="avg_beta"></span></div>
+            <div class="stat-item"><strong>Средний угол gamma:</strong> <span id="avg_gamma"></span></div>
+            <div class="stat-item"><strong>Средний радиус описанной сферы:</strong> <span id="avg_radius_described_sphere"></span></div>
+            <div class="stat-item"><strong>Средний объем описанной сферы:</strong> <span id="avg_volume_described_sphere"></span></div>
+        </div>
+    </div>
+    <div class="parallelepiped"></div>
+</body>
+</html>
+
+
