@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# parallelepiped-statistics
-parallelepiped-statistics
-=======
-# My First Repository
->>>>>>> 617effe (Initial commit with project files)
-# Проект "Вычисление характеристик параллелепипедов"
-
-## Введение
-
 # Проект "Вычисление характеристик параллелепипедов"
 
 ## Введение
